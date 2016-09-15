@@ -45,5 +45,6 @@ angular.module('starter', ['ionic','fp_controllers'])
       url:'/proPage',
       templateUrl:'professional.html',
       controller:'proController'
-    })
-})
+    });
+  $urlRouterProvider.otherwise('/index');
+});
