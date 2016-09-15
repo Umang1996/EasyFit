@@ -26,25 +26,25 @@ angular.module('starter', ['ionic','fp_controllers'])
 .config(function($stateProvider, $urlRouterProvider){
   $stateProvider
 
-    .state('startPage', {
-      url: '/starting',
-      templateUrl: 'index.html',
-      controller: 'startController'
-    })
     .state('novicePage',{
       url:'/novicePage',
-      templateUrl:'novice.html',
+      templateUrl:'templates/novice.html',
       controller:'noviceController'
     })
     .state('middlePage',{
       url:'/middlePage',
-      templateUrl:'middle.html',
+      templateUrl:'templates/middle.html',
       controller:'middleController'
+    })
+    .state('start',{
+      url:'/start',
+      templateUrl:'templates/start.html',
+      controller:'startController'
     })
     .state('proPage',{
       url:'/proPage',
-      templateUrl:'professional.html',
+      templateUrl:'templates/professional.html',
       controller:'proController'
     });
-  $urlRouterProvider.otherwise('/index');
+  $urlRouterProvider.otherwise('start');
 });

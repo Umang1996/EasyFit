@@ -1,6 +1,6 @@
 angular.module('fp_controllers', [])
 
-.controller('startController',function(){
+.controller('startController',function($scope, $state){
 
 })
   .controller('noviceController', function () {
