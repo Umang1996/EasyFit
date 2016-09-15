@@ -19,4 +19,20 @@
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
+
+
+
+  <platform name="android">
+    <preference name="SplashScreen" value="/img/humanSplash.png" />
+    <preference name="SplashScreen" value="/img/footer.png" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenBackgroundColor" value="green" />
+  </platform>
+
+  <platform name="ios">
+
+  </platform>
+
+
+
 </widget>
