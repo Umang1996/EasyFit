@@ -1,7 +1,33 @@
-<ion-view view-title="starting" class="mainBody">
+<ion-view view-title="starting" class="mainBody" >
     <ion-content >
-      <img id="startPage" src="img/logo.png">
+      <div class="startPage">
+           <img src="img/logo.png">
+      </div>
+
+      <div id="buttons-for-start">
+        <ul id="buttons-list">
+          <li ui-sref="novicePage">
+            <button id="noviceButton" class="button">
+            </button>
+            <span class="difficulty-button">Novice</span>
+          </li>
+          <li ui-sref="middlePage">
+            <button id="middleButton" class="button">
+
+            </button>
+            <span class="difficulty-button">Middle</span>
+          </li>
+          <li ui-sref="proPage">
+            <button id="proButton" class="button">
+
+            </button>
+            <span class="difficulty-button">Advance</span>
+          </li>
+        </ul>
+      </div>
+
+
   </ion-content>
 </ion-view>
 
-UI-SREF
+

@@ -2,5 +2,43 @@
 .mainBody{
   background-color: rgb(216, 216, 82);
 }
-#startPage{
+.startPage img{
+  margin: 18%;
+  padding-top:10%;
+  width: 70%;
+}
+#buttons-list{
+  margin: -8% 7%;
+  display: block;
+}
+#buttons-list li{
+  padding-top:1%;
+}
+#buttons-for-start{
+}
+.difficulty-button {
+  font-size: 150%;
+  padding: 15px;
+  margin-top:8px;
+  position: absolute;
+  font-weight: bold;
+  font-family: Arial;
+}
+.button{
+  border-radius: 50%;
+  height:75px;
+  width:75px;
+  margin-left:15%;
+}
+#noviceButton{
+  background-color: rgb(216, 216, 82);
+  border:4px solid #ffffff;
+}
+#middleButton{
+  background-color: rgb(122, 216, 95);
+  border:4px solid #fdfdfd;
+}
+#proButton{
+  background-color: rgba(147, 149, 231, 1);
+  border:4px solid #fdfdfd;
 }
