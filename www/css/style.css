@@ -24,12 +24,12 @@
   font-weight: bold;
   font-family: Arial;
 }
-.button{
-  border-radius: 50%;
-  height:75px;
-  width:75px;
-  margin-left:15%;
-}
+/*.button{*/
+  /*border-radius: 50%;*/
+  /*height:75px;*/
+  /*width:75px;*/
+  /*margin-left:15%;*/
+/*}*/
 #noviceButton{
   background-color: rgb(216, 216, 82);
   border:4px solid #ffffff;
@@ -41,4 +41,22 @@
 #proButton{
   background-color: rgba(147, 149, 231, 1);
   border:4px solid #fdfdfd;
+}
+.Beginner {
+  background-color: rgb(216, 216, 82);
+}
+.Experienced {
+  background-color: rgb(122, 216, 95);
+}
+.Advanced {
+  background-color: rgba(147, 149, 231, 1);
+}
+a.button.icon:before, a.button.icon-left:before, a.button.icon-right:before{
+  color: snow;
+}
+.button.button-light.button-clear {
+  color: snow;
+}
+.beginner-picture-1{
+  width: 40%;
 }

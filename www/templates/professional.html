@@ -1,5 +1,10 @@
-<ion-view view-title="Pro Page">
-  <ion-content>
-    <h1>This is a PRO page</h1>
+<ion-view class="Advanced">
+
+
+  <ion-content scroll="false" ng-controller="proController">
+    <a class="button icon-left ion-chevron-left button-clear button-light" onclick="window.history.back()">Logout</a>
+    <a ng-hide="id==0" class="button icon-left ion-chevron-left button-clear button-light" ng-click="changeProImage(-1)"></a>
+    <a ng-hide="id==12" class="button icon-left ion-chevron-right button-clear button-light" ng-click="changeProImage(1)"></a>
+    <img id="picture" ng-src="{{ProImg}}" style="width: 100%">
   </ion-content>
 </ion-view>

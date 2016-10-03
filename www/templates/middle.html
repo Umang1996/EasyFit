@@ -1,5 +1,11 @@
-<ion-view view-title="Middle Page">
-  <ion-content>
-    <h1>This is a middle page</h1>
+<ion-view class="Experienced">
+
+  <ion-content scroll="false" ng-controller="middleController">
+    <a class="button icon-left ion-chevron-left button-clear button-light" onclick="window.history.back()">Logout</a>
+
+
+    <a ng-hide="id==0" class="button icon-left ion-chevron-left button-clear button-light" ng-click="changeMidImage(-1)"></a>
+    <a ng-hide="id==9" class="button icon-left ion-chevron-right button-clear button-light" ng-click="changeMidImage(1)"></a>
+    <img id="picture" ng-src="{{MidImg}}" style="width: 100%">
   </ion-content>
 </ion-view>
