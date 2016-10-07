@@ -1,32 +1,37 @@
 <ion-view view-title="starting" class="mainBody" >
     <ion-content scroll="false">
       <div class="startPage">
-           <img src="img/logo.png">
+           <img src="../img/logo.png">
       </div>
 
       <div id="buttons-for-start">
-        <ul id="buttons-list">
+        <ul class="buttons-list">
           <li ui-sref="novicePage">
-            <button id="noviceButton" class="button">
-            </button>
+            <span class="noviceButton button button-start">
+            </span>
             <span class="difficulty-button">Beginner</span>
           </li>
           <li ui-sref="middlePage">
-            <button id="middleButton" class="button">
-
-            </button>
+            <span class="middleButton button button-start">
+            </span>
             <span class="difficulty-button">Experienced</span>
           </li>
           <li ui-sref="proPage">
-            <button id="proButton" class="button">
+            <span class="proButton button button-start">
 
-            </button>
+            </span>
             <span class="difficulty-button">Advance</span>
           </li>
         </ul>
       </div>
 
-
+      <div class="footer-bg">
+          <div class="footer-icons">
+            <img ui-sref="settings" id="settings-icon" src="../img/button_settings.png" style="">
+            <img ui-sref="about" id="about-us-icon" src="../img/button_information.png">
+          </div>
+        <img src="../img/footer_main.png" width="100%" style="margin: 0; padding: 0; " >
+      </div>
   </ion-content>
 </ion-view>
 

@@ -3,13 +3,19 @@ angular.module('fp_controllers', [])
   .controller('startController', function ($scope, $state) {
 
   })
+  .controller('aboutUsController' , function ($scope, $state) {
+
+  })
+  .controller('settingsController' , function ($scope, $state) {
+
+  })
   .controller('noviceController', function ($scope) {
     $scope.beginnerPictures = [{time: 3000, src: '/img/noob/1.png'},
       {time: 1000, src: '/img/noob/2.png'},
       {time: 2000, src: '/img/noob/3.png'},
       {time: 3000, src: '/img/noob/4.png'},
       {time: 3000, src: '/img/noob/5.png'},
-      {time: 4000, src: '/img/noob/6.png'},
+      {time: 4000, src: '/img/noob/6.png'}
     ];
     $scope.id = 0;
     $scope.beginnerImg = $scope.beginnerPictures[$scope.id].src;
@@ -18,7 +24,7 @@ angular.module('fp_controllers', [])
 $scope.changeBeginnerImage=function (property) {
   $scope.id += property;
   $scope.beginnerImg = $scope.beginnerPictures[$scope.id].src;
-  console.log($scope.id)
+  console.log($scope.id);
 if ($scope.id==5) {
 $scope.id=0-1
 }

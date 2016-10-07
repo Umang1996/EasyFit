@@ -45,6 +45,17 @@ angular.module('starter', ['ionic','fp_controllers'])
       url:'/proPage',
       templateUrl:'templates/professional.html',
       controller:'proController'
-    });
+    })
+    .state('settings',{
+      url:'/settings',
+      templateUrl:'templates/settings.html',
+      controller:'settingsController'
+    })
+    .state('about',{
+      url:'/about',
+      templateUrl:'templates/about.html',
+      controller:'aboutUsController'
+    })
+  ;
   $urlRouterProvider.otherwise('start');
 });
