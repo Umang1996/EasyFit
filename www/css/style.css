@@ -25,7 +25,8 @@
 .difficulty-button {
   font-size: 120%;
   font-weight: bold;
-  margin-top:1%;
+  margin: -70% 120%;
+  position: absolute;
 }
 
 .noviceButton{
@@ -78,4 +79,55 @@ a.button.icon:before, a.button.icon-left:before, a.button.icon-right:before{
 }
 .beginner-picture-1{
   width: 40%;
+}
+
+.about-introduction{
+  padding-top:5%;
+  width:90%;
+  height:auto;
+  position:relative;
+  text-align: left;
+  margin: auto 8%;
+  font-size: 95%;
+  font-weight: 500;
+  font-family: "Arial";
+}
+.about-introduction h1{
+  padding-bottom:5%;
+  text-align: center;
+  font-size: 200%;
+  color:white;
+  font-family: Arial;
+  letter-spacing: 1.5px;
+}
+#geeksters-image{
+  width:60%;
+  height: auto;
+  float:left;
+  margin:auto 20%;
+}
+.created-by{
+  position: absolute;
+  text-align: center;
+  padding-top:6%;
+}
+.created-by p:nth-child(1n){
+  padding-top:10%;
+  font-size: 85%;
+}
+.footer-aboutUs{
+  margin: auto 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  float: left;
+}
+.footer-aboutUs a:nth-child(2n){
+  float: right;
+  right: 0;
+  margin: auto 10%;
+}
+.footer-aboutUs a{
+  color:white;
+  font-size: 120%;
 }
