@@ -8,7 +8,11 @@
       Your Name Here
     </author>
   <content src="index.html"/>
-  <access origin="*"/>
+  <access origin="*" launch-external="yes" />
+  <allow-intent href="tel:*" />
+  <allow-intent href="sms:*" />
+  <allow-intent href="mailto:*" />
+  <allow-intent href="geo:*" />
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
