@@ -6,7 +6,28 @@ angular.module('fp_controllers', [])
   .controller('aboutUsController' , function ($scope, $state) {
 
   })
-  .controller('settingsController' , function ($scope, $state) {
+  .controller('settingsController' , function ($scope, $state,$cordovaDatePicker) {
+    var options = {
+      date: new Date(),
+      mode: 'time',
+      minDate: new Date() - 10000,
+      allowOldDates: true,
+      allowFutureDates: false,
+      doneButtonLabel: 'DONE',
+      doneButtonColor: '#F2F3F4',
+      cancelButtonLabel: 'CANCEL',
+      cancelButtonColor: '#000000',
+      minuteInterval:'1'
+    };
+    $scope.pickTime = function () {
+
+      $cordovaDatePicker.show(options).then(function(date){
+        alert(date);
+      });
+    };
+
+    $scope.settingsTime = new Date().getHours();
+    $scope.settingsMins = new Date().getMinutes();
 
   })
   .controller('noviceController', function ($scope) {

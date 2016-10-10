@@ -1,6 +1,37 @@
-<ion-view view-title="settings" class="mainBody" >
+<ion-view view-title="settings" class="mainBody">
   <ion-content scroll="false">
-    <a class="button icon-left ion-chevron-left button-clear button-light" onclick="window.history.back()">Back</a>
-    settings
+    <a class="button icon-left ion-chevron-left button-clear button-light" onclick="window.history.back()">back</a>
+    <h2 style="color: white" align="center">Settings</h2>
+<br>
+
+    <div class="text-center">
+    Set the notification and the application<br>
+    will remind you about your workout time at a<br>
+      convenient moment.
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <p align="center">The beginning of the workout</p>
+
+    <div ng-click="pickTime()">{{settingsTime}}:{{settingsMins}}</div>
+    <p>Workout mode</p>
+
+
+    <br>
+    <p>Notifications are</p>
+    <label class="toggle toggle-light">
+
+      <input type="checkbox" ng-model="checking">
+      <div class="track">
+        <div class="handle"></div>
+      </div>
+    </label>
+    {{checking==true ? "turened on" : "turened off"}}
+
   </ion-content>
+
 </ion-view>

@@ -260,3 +260,9 @@
   }
 
 }
+.toggle input:checked + .track .handle {
+  background-color: rgb(216, 216, 82);
+}
+.toggle.toggle-light input:checked + .track {
+  background-color: #fff;
+}
