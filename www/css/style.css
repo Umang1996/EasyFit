@@ -83,7 +83,10 @@
   .beginner-picture-1{
     width: 40%;
   }
-
+  .button{
+    min-width:52px;
+    min-height: 52px;
+  }
 
 
 }
@@ -169,7 +172,10 @@
   .beginner-picture-1{
     width: 40%;
   }
-
+  .button{
+    min-width:52px;
+    min-height: 52px;
+  }
 
 
 }
@@ -258,5 +264,8 @@
   .beginner-picture-1{
     width: 40%;
   }
-
+  .button{
+    min-width:52px;
+    min-height: 52px;
+  }
 }

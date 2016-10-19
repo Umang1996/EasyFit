@@ -6,9 +6,40 @@ angular.module('fp_controllers', [])
   .controller('aboutUsController' , function ($scope, $state) {
 
   })
-  .controller('settingsController' , function ($scope, $state) {
+  .controller('settingsController' , function ($scope, $state,$cordovaDatePicker) {
+    $scope.temp = function(){
+      alert('a')
+    };
+    $scope.notificationsTime = {
+      notifications: '1/1'
+    };
+    $scope.clicked = function(temp){
+      $scope.notificationsTime.notifications = temp;
+    };
 
-  })
+  var options = {
+    date: new Date(),
+    mode: 'time',
+    minDate: new Date() - 10000,
+    allowOldDates: true,
+    allowFutureDates: false,
+    doneButtonLabel: 'DONE',
+    doneButtonColor: '#F2F3F4',
+    cancelButtonLabel: 'CANCEL',
+    cancelButtonColor: '#000000',
+    minuteInterval:'1'
+  };
+  $scope.pickTime = function () {
+    $cordovaDatePicker.show(options).then(function(date){
+      alert(date);
+    });
+  };
+
+  $scope.settingsTime = new Date().getHours();
+  $scope.settingsMins = new Date().getMinutes();
+
+
+})
   .controller('noviceController', function ($scope) {
     $scope.beginnerPictures = [{time: 3000, src: '/img/noob/1.png'},
       {time: 1000, src: '/img/noob/2.png'},
@@ -56,7 +87,7 @@ $scope.id=0-1
     $scope.changeMidImage=function (value) {
       $scope.id += value;
       $scope.MidImg = $scope.MiddlePictures[$scope.id].src;
-      console.log($scope.id)
+      console.log($scope.id);
       if ($scope.id==10) {
         $scope.id=0-1
       }
@@ -89,7 +120,7 @@ $scope.id=0-1
     $scope.changeProImage=function (meaning) {
       $scope.id += meaning;
       $scope.ProImg = $scope.ProfessionalPictures[$scope.id].src;
-      console.log($scope.id)
+      console.log($scope.id);
       if ($scope.id==13) {
         $scope.id=0-1
       }

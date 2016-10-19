@@ -1,6 +1,68 @@
-<ion-view view-title="settings" class="mainBody" >
+<ion-view view-title="settings" class="mainBody">
   <ion-content scroll="false">
-    <a class="button icon-left ion-chevron-left button-clear button-light" onclick="window.history.back()">Back</a>
-    ПРЕВЕД
+    <a class="button icon-left ion-chevron-left button-clear button-light" onclick="window.history.back()">back</a>
+
+    <!--Header-->
+
+    <div class="settings-main-info">
+      <h2>Settings</h2>
+    <p>Set the notification and the application<br>
+    will remind you about your workout time at a<br>
+      convenient moment.</p>
+    </div>
+
+
+
+
+    <!--Time-->
+
+    <div class="settings-time-block">
+    <p align="center">The beginning of the workout</p>
+
+    <div class="timePickerMainDiv" ng-click="pickTime()">
+      <img src="img/timeBackground.png">
+      <span class="time-picker-style">{{settingsTime}}</span><span class="time-picker-style">:{{settingsMins}}</span><span class="time-picker-style">PM</span>
+      <img src="img/timeBackground.png">
+    </div>
+    </div>
+
+
+    <!-- Notifications Choosing-->
+
+    <div class="settings-notifications">
+    <p>Workout mode</p>
+      <img src="img/timeBackground.png">
+          <ul class="ul-notifications">
+
+            <li>
+              <div id="five-two" ng-click="clicked('5/2')" ng-class="{'background-white': notificationsTime.notifications =='5/2'}">
+              <span>5</span><span>/2</span>
+              </div>
+            </li>
+
+            <li>
+              <div id="one-one" ng-click="clicked('1/1')" ng-class="{'background-white': notificationsTime.notifications =='1/1'}">
+                <span>1</span><span>/1</span>
+              </div>
+            </li>
+
+          </ul>
+      <img src="img/timeBackground.png">
+
+    </div>
+
+    <div class="notif_footer">
+    <p class="footer_phrase">Notifications are</p>
+    <label class="toggle toggle-light toogle_notif">
+
+      <input type="checkbox" ng-model="checking">
+      <div class="track">
+        <div class="handle"></div>
+      </div>
+      <!-- <span class="turned_position">{{checking==true ? "turened on" : "turened off"}}</span> !-->
+    </label>
+
+    </div>
   </ion-content>
+
 </ion-view>

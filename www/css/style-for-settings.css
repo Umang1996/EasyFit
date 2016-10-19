@@ -1,0 +1,337 @@
+@media (min-width: 0px) and (max-width:320px ){
+  .settings-main-info h2{
+    padding-top: 5%;
+    color:white;
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    letter-spacing: 1.5px;
+  }
+  .settings-time-block{
+    width:100%;
+    text-align: center;
+    padding-top: 7%;
+    font-size: 90%;
+  }
+  .timePickerMainDiv img{
+    width:90%;
+    padding-bottom:5%;
+  }
+  .timePickerMainDiv img:nth-child(3n-1){
+    transform: rotate(-180deg);
+    padding-bottom:5%;
+  }
+  .timePickerMainDiv span:nth-child(4n){
+      color:black;
+      font-size: 250%;
+    font-weight: 600;
+  }
+  .time-picker-style{
+    font-size: 400%;
+    color:white;
+  }
+  .settings-notifications{
+    position:relative;
+    width:100%;
+    padding-top:5%;
+    text-align: center;
+  }
+  .settings-notifications img{
+    width: 90%;
+    float: left;
+    left:5%;
+    position: absolute;
+    z-index: -1;
+  }
+  .settings-notifications img:nth-child(5n-1){
+    transform: rotate(-180deg);
+    position: absolute;
+    padding-bottom:11%;
+    z-index: -2;
+  }
+  .settings-main-info p{
+    font-size: 90%;
+    text-align: center;
+  }
+  .ul-notifications {
+    display:inline;
+    font-weight: 600;
+    font-size: 130%;
+  }
+  .ul-notifications div{
+    color:black;
+    font-size:150%;
+  }
+  #five-two {
+    border-bottom-left-radius: 10%;
+    border-top-left-radius: 10%;
+    position: absolute;
+    height:140%;
+    padding-top: 5%;
+    width: 45%;
+    float:left;
+    left:5%;
+  }
+  #five-two span:nth-child(2n){
+    font-size:80%;
+    color:grey;
+  }
+  #one-one{
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10%;
+    position: absolute;
+    height:140%;
+    padding-top: 5%;
+    width: 45%;
+    float:right;
+    right:5%;
+  }
+  #one-one span:nth-child(2n){
+    font-size:80%;
+    color:grey;
+  }
+  .background-white{
+    background-color: white;
+  }
+
+  .notif_footer{
+    width: 100%;
+    position: absolute;
+    bottom: 13%;
+  }
+  .toogle_notif{
+    right: 10%;
+    position: absolute;
+  }
+  .footer_phrase{
+    font-size: 130%;
+    left:10%;
+    padding-top: 1%;
+    position: absolute;
+  }
+
+  .toggle input:checked + .track .handle {
+    background-color: rgb(216, 216, 82);
+  }
+  .toggle.toggle-light input:checked + .track {
+    background-color: #fff;
+  }
+}
+
+
+
+@media (min-width: 321px) and (max-width:760px ){
+  .settings-main-info h2{
+    padding-top: 5%;
+    color:white;
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    letter-spacing: 1.5px;
+  }
+  .settings-time-block{
+    width:100%;
+    text-align: center;
+    padding-top: 7%;
+    font-size: 90%;
+  }
+  .timePickerMainDiv img{
+    width:90%;
+    padding-bottom:5%;
+  }
+  .timePickerMainDiv img:nth-child(3n-1){
+    transform: rotate(-180deg);
+    padding-bottom:5%;
+  }
+  .timePickerMainDiv span:nth-child(4n){
+    color:black;
+    font-size: 250%;
+    font-weight: 600;
+  }
+  .time-picker-style{
+    font-size: 400%;
+    color:white;
+  }
+  .settings-notifications{
+    position:relative;
+    width:100%;
+    padding-top:5%;
+    text-align: center;
+  }
+  .settings-notifications img{
+    width: 90%;
+    float: left;
+    left:5%;
+    position: absolute;
+    z-index: -1;
+  }
+  .settings-notifications img:nth-child(5n-1){
+    transform: rotate(-180deg);
+    position: absolute;
+    padding-bottom:11%;
+    z-index: -2;
+  }
+  .settings-main-info p{
+    font-size: 90%;
+    text-align: center;
+  }
+  .ul-notifications {
+    display:inline;
+    font-weight: 600;
+    font-size: 130%;
+  }
+  .ul-notifications div{
+    color:black;
+    font-size:150%;
+  }
+  #five-two {
+    border-bottom-left-radius: 10%;
+    border-top-left-radius: 10%;
+    position: absolute;
+    height:140%;
+    padding-top: 5%;
+    width: 45%;
+    float:left;
+    left:5%;
+  }
+  #five-two span:nth-child(2n){
+    font-size:80%;
+    color:grey;
+  }
+  #one-one{
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10%;
+    position: absolute;
+    height:140%;
+    padding-top: 5%;
+    width: 45%;
+    float:right;
+    right:5%;
+  }
+  #one-one span:nth-child(2n){
+    font-size:80%;
+    color:grey;
+  }
+  .background-white{
+    background-color: white;
+  }
+
+
+
+  .toggle input:checked + .track .handle {
+    background-color: rgb(216, 216, 82);
+  }
+  .toggle.toggle-light input:checked + .track {
+    background-color: #fff;
+  }
+
+}
+
+
+
+
+@media (min-width: 768px){
+  .settings-main-info h2{
+    padding-top: 5%;
+    color:white;
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    letter-spacing: 1.5px;
+  }
+  .settings-time-block{
+    width:100%;
+    text-align: center;
+    padding-top: 7%;
+    font-size: 90%;
+  }
+  .timePickerMainDiv img{
+    width:90%;
+    padding-bottom:5%;
+  }
+  .timePickerMainDiv img:nth-child(3n-1){
+    transform: rotate(-180deg);
+    padding-bottom:5%;
+  }
+  .timePickerMainDiv span:nth-child(4n){
+    color:black;
+    font-size: 250%;
+    font-weight: 600;
+  }
+  .time-picker-style{
+    font-size: 400%;
+    color:white;
+  }
+  .settings-notifications{
+    position:relative;
+    width:100%;
+    padding-top:5%;
+    text-align: center;
+  }
+  .settings-notifications img{
+    width: 90%;
+    float: left;
+    left:5%;
+    position: absolute;
+    z-index: -1;
+  }
+  .settings-notifications img:nth-child(5n-1){
+    transform: rotate(-180deg);
+    position: absolute;
+    padding-bottom:11%;
+    z-index: -2;
+  }
+  .settings-main-info p{
+    font-size: 90%;
+    text-align: center;
+  }
+  .ul-notifications {
+    display:inline;
+    font-weight: 600;
+    font-size: 130%;
+  }
+  .ul-notifications div{
+    color:black;
+    font-size:150%;
+  }
+  #five-two {
+    border-bottom-left-radius: 10%;
+    border-top-left-radius: 10%;
+    position: absolute;
+    height:140%;
+    padding-top: 5%;
+    width: 45%;
+    float:left;
+    left:5%;
+  }
+  #five-two span:nth-child(2n){
+    font-size:80%;
+    color:grey;
+  }
+  #one-one{
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10%;
+    position: absolute;
+    height:140%;
+    padding-top: 5%;
+    width: 45%;
+    float:right;
+    right:5%;
+  }
+  #one-one span:nth-child(2n){
+    font-size:80%;
+    color:grey;
+  }
+  .background-white{
+    background-color: white;
+  }
+
+
+
+  .toggle input:checked + .track .handle {
+    background-color: rgb(216, 216, 82);
+  }
+  .toggle.toggle-light input:checked + .track {
+    background-color: #fff;
+  }
+}
